@@ -7,28 +7,36 @@ Welcome to R2B2-Nano's documentation!
 =====================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Disseny:
    
    design/index
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Electronica:
 
    electro/index
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Control:
 
    software/index
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Muntatge:
 
    assembly/index
+   assembly/10_charger
+   assembly/20_battery
+   assembly/30_electronics
+   assembly/40_thrusters
+   assembly/50_assembly
+   assembly/60_buoy
+   assembly/70_body
+
 
 
 Indices and tables
