@@ -3,20 +3,21 @@ Muntatge
 
 .. note:: En aquest apartat cal explicar com muntar R2B2-nano
 
-AA-Eines i Material de seguretat
-BB-Material
+*  AA-Eines i Material de seguretat
+*  BB-Material
 
-00-Base de Càrrega
-01-Xassis Bateria
-02-Xassis Electronica
-03-Propulsors
-04-Assamblatge 01, 02 i 03
-05-Boia
-06-Carcassa
+
+*  10-Base de Càrrega
+*  20-Xassis Bateria
+*  30-Xassis Electronica
+*  40-Propulsors
+*  50-Assamblatge 01, 02 i 03
+*  60-Boia
+*  70-Carcassa
 
 ..
     .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
     :caption: Cluster HA
 
     10_charger

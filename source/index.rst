@@ -25,7 +25,7 @@ Welcome to R2B2-Nano's documentation!
    software/index
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Muntatge:
 
    assembly/index
