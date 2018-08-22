@@ -30,12 +30,12 @@ Welcome to R2B2-Nano's documentation!
 
    assembly/index
    assembly/10_charger
-   assembly/20_battery
-   assembly/30_electronics
+   assembly/20_power
+   assembly/30_control
    assembly/40_thrusters
-   assembly/50_assembly
-   assembly/60_buoy
-   assembly/70_body
+   assembly/50_buoy
+   assembly/60_body
+   assembly/70_assembly
 
 
 
