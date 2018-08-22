@@ -16,3 +16,4 @@ Es pot trobar l'esquema electrònic "r2b2-nano-board" al projecte públic `R2B2-
 
 .. image:: 20_control/20_01_control_schematic.png
 
+
