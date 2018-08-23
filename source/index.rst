@@ -5,6 +5,11 @@
 
 Welcome to R2B2-Nano's documentation!
 =====================================
+.. toctree::
+   :maxdepth: 3
+   :caption: INTRODUCCIÓ:
+   
+   r2b2/index
 
 .. toctree::
    :maxdepth: 3

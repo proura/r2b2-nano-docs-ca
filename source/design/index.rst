@@ -21,7 +21,7 @@
 2.3. Configuració
 *****************
 
-.. code-block:: scad
+.. code-block:: none
 
     /*
     Title:          config.scad for R2B2 Nano
