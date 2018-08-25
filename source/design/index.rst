@@ -28,7 +28,9 @@ Que l'OpenSCAD sigui un llenguatge ens permet per una banda parametritzar tots e
 2.2. Configuració
 *****************
 
-Tots els parametres es troben al fitxer **config.scad** de la carpeta **design**. Podem definir l'amplada de les parets de tot el 3D, les mides del motors, dels propulsors, la mida dels cargols, etc... i cada parametre que ajustem fa que tot el disseny s'hi adapti, així de forma ràpida i sense haver de redibuixar tot el 3D disposem de les peces idonies al nostre muntatge.
+Tots els parametres es troben al fitxer **config.scad** de la carpeta **design**. Podem definir l'amplada de les parets de tot el 3D, les mides del motors, dels propulsors, la mida dels cargols, etc... i cada parametre que ajustem fa que tot el disseny s'hi adapti, així de forma ràpida i sense haver de redibuixar tot el 3D disposem de les peces idònies al nostre muntatge.
+
+A més a més dels parametres que especifiquen les mides del disseny hi ha el paràmetre **$fn** que definex en número de fragments en que es renderitzaran les circumferències completes. Com més gran sigui el valor de $fn més tardarà a fer el renderitzat. No és recomanable un valor superior a 100.
 
 .. code-block:: none
 
@@ -302,7 +304,7 @@ d_motor_grub    2 mm                Diametre del cargol sense cap per collar l'h
 2.3.4. Boia
 -----------
 
-Una de les majors complicacion que es presenten en un ROV són les comunicacions, ja l'aigua no és un medi amic de les ales freqüencies com el Wifi i el Bluetooth. Per això es deu qué la majoria de ROVs duen un cable fins la superfície ja sigui per emetre les ones de communicacio o per conectar directament a la consola de control.
+Una de les majors complicacion que es presenten en un ROV són les comunicacions, degut a que l'aigua no és un medi amic de les altes freqüencies que utilitzen el Wifi o el Bluetooth. Per això es deu qué la majoria de ROVs duen un cable fins a la superfície, ja sigui per emetre les ones de communicació com per conectar directament a la consola de control.
 
 Com a parametres a la boia nomes hi ha les mides del cargols que utilitzarem per unir-ne les dues parts.
 
@@ -336,7 +338,7 @@ La seva funció principal és aconseguir la flotabilitat zero de l'R2B2-nano, é
 
 .. note:: Sempre va bé deixar una mica de flotabilitat positiva per que l'R2B2-nano vagi cap a la superficie en el cas de que ens quedem sense bateria o es produeix algun error de communicacions.
 
-Per tan la carcassa de R2B2-nano és pot fer al gust i forma de cadascú tinguent en compte els principis d'Arquímedes. Si fem una forma de carcassa asimetrica a l'eix que es crea entre el punt de flotació i el punt de pes farà que l'R2B2-nano s'estabilitzi en una posició incòmode i de més dificil controlar.
+Per tan la carcassa de R2B2-nano és pot fer al gust i forma de cadascú tinguent en compte els principis d'Arquímedes. Si fem una forma de carcassa assimètrica, l'eix que es crea entre el punt de flotació i el punt de pes farà que l'R2B2-nano s'estabilitzi en una posició incòmode i de més dificil controlar.
 
 .. figure:: design_images/flot_bad.png
     :align: center
@@ -360,7 +362,9 @@ Una proposta de carcassa podria ser com la mostrada a continuació:
 2.4. Generar STL
 ****************
 
-Per poder imprimir les peces en una impressora 3D convencional cal que els fitxers estiguin en format STL. Des de l'OpenSCAD podem generar els fitxers STL un a un per 
+Per poder imprimir les peces en una impressora 3D convencional cal que els fitxers estiguin en un format compatible com pot ser STL. Des de l'OpenSCAD podem generar els fitxers STL un a un, però per agilitzar aquesta tasca hi ha un Script dins la carpeta design que recorre el contingut de la carpeta **/to_stl** i converteix cada fitxer .scad que hi troba a un STL. Els STLs generats es desen a la carpeta **/stl**.
+
+.. Attention:: Generar tots el fitxers pot requerir una espera llarga. 
 
 .. code-block:: console
 
@@ -378,6 +382,7 @@ Per poder imprimir les peces en una impressora 3D convencional cal que els fitxe
     Converting propeller.scad to propeller.stl
     Converting r2b2_nano.scad to r2b2_nano.stl
 
+Per altra banda, si nomes ens ens interessa regenerar l'STL d'una sola peça, podem cridar l'script passant com a paràmetre el nom .scad del fitxer que volem convertir.
 
 .. code-block:: console
 
