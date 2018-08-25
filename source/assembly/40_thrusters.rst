@@ -8,10 +8,10 @@
 5.4.1.1 Material
 ----------------
 
-*  4x Propulsor Part A `(Fitxer STL) <https://github.com/r2b2osrov/r2b2-nano/blob/master/design/stl/half_thruster_A.stl>`_
-*  4x Propulsor Part B `(Fitxer STL) <https://github.com/r2b2osrov/r2b2-nano/blob/master/design/stl/half_thruster_B.stl>`_
-*  4x Hèlix `(Fitxer STL) <https://github.com/r2b2osrov/r2b2-nano/blob/master/design/stl/propeller.stl>`_
-*  4x Encapsulat Motors `(Fitxer STL) <https://github.com/r2b2osrov/r2b2-nano/blob/master/design/stl/motor_housing.stl>`_
+*  4x Propulsor Part A `(Propulsor A STL) <https://github.com/r2b2osrov/r2b2-nano/blob/master/design/stl/half_thruster_A.stl>`_
+*  4x Propulsor Part B `(Propulsor B STL) <https://github.com/r2b2osrov/r2b2-nano/blob/master/design/stl/half_thruster_B.stl>`_
+*  4x Hèlix `(Hèlix STL) <https://github.com/r2b2osrov/r2b2-nano/blob/master/design/stl/propeller.stl>`_
+*  4x Encapsulat Motors `(Encapsulat STL) <https://github.com/r2b2osrov/r2b2-nano/blob/master/design/stl/motor_housing.stl>`_
 *  4x Cargols sense cap M2 x 3mm
 *  4x Motors Drone (716 Coreless Motor)
 *  Baselina

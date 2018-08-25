@@ -7,7 +7,7 @@ Benvinguts a la documentació de l'R2B2-nano
 .. toctree::
    :maxdepth: 3
    :caption: Introducció:
-   
+
    r2b2/index
 
 .. toctree::

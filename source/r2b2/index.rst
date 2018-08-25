@@ -51,9 +51,9 @@ També es pot descarregar amb la comanda següent:
     -rw-rw-r-- 1 r2b2 r2b2 35147 ago 24 08:59 LICENSE
     -rw-rw-r-- 1 r2b2 r2b2    32 ago 24 08:59 README.md
 
-Tots el dissenys 3D de les peces realitzats amb OpenSCAD i els seus STL per enviar a imprimir estan dins la carpeta **design**. Per com fer-ne us i personalitzar el vostre R2B2-nano mireu l'apartat :ref:`ref-Design`.
+Tots el dissenys 3D de les peces realitzats amb OpenSCAD i els seus STL per enviar a imprimir estan dins la carpeta **design**. Per com fer-ne us i personalitzar el vostre R2B2-nano mireu l'apartat `Disseny <../design/index.html>`_.
 
-Dins la carpeta **code** hi podem trobar diferents programes d'`Arduino IDE <https://www.arduino.cc/>`_ per testejar la placa i els components electrònics, el Firmware de l'R2B2-nano i el prgrama de control fet amb `Processing IDE <https://processing.org/>`_ per controlar l'R2B2-nano des del mòbil. Tots aquest punts estan explicats amb més detall a l'apartat :ref:`ref-Software`.
+Dins la carpeta **code** hi podem trobar diferents programes d'`Arduino IDE <https://www.arduino.cc/>`_ per testejar la placa i els components electrònics, el Firmware de l'R2B2-nano i el prgrama de control fet amb `Processing IDE <https://processing.org/>`_ per controlar l'R2B2-nano des del mòbil. Tots aquest punts estan explicats amb més detall a l'apartat `Software <../software/index.html>`_.
 
 1.1.2. EasyEDA 
 **************

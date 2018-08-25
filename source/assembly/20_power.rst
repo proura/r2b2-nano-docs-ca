@@ -31,13 +31,12 @@
 *  Trepant i broca petita
 *  Pistola Cola Tèrmica
 *  Serra/llima per treure els excessos de resina
+*  Tester
 
 5.2.2 Muntatge
 **************
 
-.. image:: 20_power_images/20_01_power_material.jpg
-
-Es pot trobar l'esquema electrònic "r2b2-nano-power" al projecte públic `R2B2-nano <https://easyeda.com/r2b2osrov/r2b2-nano>`_ allotjat a EASEYEDA.
+Es pot trobar l'esquema electrònic "r2b2-nano-power" al projecte públic `R2B2-nano <https://easyeda.com/r2b2osrov/r2b2-nano>`_ allotjat a EasyEDA.
 
 .. image:: ../electro/10_power/10_01_power_schematic.png
 .. image:: 20_power_images/20_01_power_assembly.jpg

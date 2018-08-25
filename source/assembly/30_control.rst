@@ -37,7 +37,7 @@
 
 .. image:: 30_control_images/30_01_control_material.jpg
 
-Es pot trobar l'esquema electrònic "r2b2-nano-board" al projecte públic `R2B2-nano <https://easyeda.com/r2b2osrov/r2b2-nano>`_ allotjat a EASEYEDA.
+Es pot trobar l'esquema electrònic "r2b2-nano-board" al projecte públic `R2B2-nano <https://easyeda.com/r2b2osrov/r2b2-nano>`_ allotjat a EasyEDA.
 
 .. image:: ../electro/20_control/20_01_control_schematic.png
 .. image:: 30_control_images/30_01_control_assembly.jpg

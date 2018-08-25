@@ -1,5 +1,3 @@
-.. _ref-Software:
-
 ===========
 4. Software
 ===========
