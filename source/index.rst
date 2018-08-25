@@ -1,13 +1,12 @@
-.. R2B2-Nano documentation master file, created by
-   sphinx-quickstart on Sun Aug 12 14:14:38 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+===========================================
+Benvinguts a la documentació de l'R2B2-nano
+===========================================
 
-Welcome to R2B2-Nano's documentation!
-=====================================
+.. image:: images/70_12_assembly.jpg
+
 .. toctree::
    :maxdepth: 3
-   :caption: INTRODUCCIÓ:
+   :caption: Introducció:
    
    r2b2/index
 
@@ -19,7 +18,7 @@ Welcome to R2B2-Nano's documentation!
 
 .. toctree::
    :maxdepth: 3
-   :caption: Electronica:
+   :caption: Electrònica:
 
    electro/index
 
