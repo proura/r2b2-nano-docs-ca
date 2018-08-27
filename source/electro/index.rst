@@ -91,14 +91,14 @@ Podeu veure com muntar aquest mòdul a l'apartat `Xassís Control <../assembly/3
 3.2.3 Connexions ESP32
 ----------------------
 
-Al l'equema següent podem veure que hi ha connectat a cada pota de l'EPS23 WROVER. 
+Al l'equema següent podem veure que hi ha connectat a cada port de l'EPS23 WROVER. 
 
 .. figure:: 20_control/20_02_control_ESP32_PINOUT.jpg
     :align: center
 
     Connexions de l'ESP32.
 
-Relació entre els drivers de motors i el ports de la placa:
+Relació entre els drivers de motors i els ports de la placa:
 
 =========== ======= ======== ========
 Driver      Sortida PCB v0.1 PCB v0.2
