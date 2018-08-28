@@ -85,3 +85,4 @@ ELECT   Regulador lm2596 (8v --> 6v)	            1
 *  Cutter
 *  Llimes
 *  Paper de vidre
+*  USB to TTY
