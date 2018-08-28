@@ -41,7 +41,12 @@ Benvinguts a la documentació de l'R2B2-nano
    assembly/60_body
    assembly/70_assembly
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Apèndix:
 
+   assembly/80_materials
+   assembly/81_tools
 
 Indices and tables
 ==================

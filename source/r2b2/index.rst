@@ -7,14 +7,14 @@ L'R2B2-nano és un projecte OpenSource per a la realització d'un ROV imprimible
 **Principals caracteristiques de l'R2B2-nano:**
 
 *  Microcontrolador ESP32 (Espressif)
-*  Giroscopi i accelerometre MPU6050 (InvenSense)
+*  Giroscopi i acceleròmetre MPU6050 (InvenSense)
 *  Comunicacions Wifi i Bluetooth
 *  Càrrega sense fils de les bateries
 *  4 Propulsors (2 horitzontals i 2 verticals)
 *  Actualització del Firmaware amb Wireless
 *  Firmware programable amb Arduino IDE
 *  Programa de control per Android
-*  Xassis imprimible en 3D
+*  Xassís imprimible en 3D
 *  Baix cost
 
 

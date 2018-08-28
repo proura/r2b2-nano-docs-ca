@@ -72,7 +72,7 @@ Per a muntar el mòdul de control hi ha varies opcions:
 .. figure:: 20_control/20_02_control_board_REG.jpg
     :align: center
 
-    laca PCB del mòdul de control.
+    Placa PCB del mòdul de control.
 
 .. figure:: 20_control/20_02_control_board_SMD.jpg
     :align: center
@@ -184,8 +184,8 @@ The DW01A battery protection IC is designed to protect lithium-ion/polymer batte
 
     Mòdul de càrrega TP4056.
 
-3.3.5 Cargador Qi i Receptor Qi
--------------------------------
+3.3.5. Cargador Qi i Receptor Qi
+--------------------------------
 
 Qi és un estàndard obert d'interface desenvolupat pel consorci de potència sense fils (WPC) que té com a objectiu de transferir energia a una distància fins a 4cm. És usat per a carregar dispositius en múltiples aplicacions.
 
@@ -199,8 +199,8 @@ Qi és un estàndard obert d'interface desenvolupat pel consorci de potència se
 
     Emisor Qi.
 
-3.3.6 Bateria LiPo
-------------------
+3.3.6. Bateria LiPo
+-------------------
 Bateria d'ió liti en polímer o Bateria d'ió liti-polímer abreviat Li-Po és una bateria en què l'electròlit és una solució de sals de liti en un polímer sòlid o gelatinós, l'ànode és de carboni i el càtode és un òxid metàl·lic.
 
 És una bateria recarregable que evolucionà a partir de les bateries d'ió liti on l'electròlit de sals de liti ja no es troba en una solució orgànica sinó en un polímer compost sólid com ara el Poliacrylonitril.
@@ -211,8 +211,8 @@ Bateria d'ió liti en polímer o Bateria d'ió liti-polímer abreviat Li-Po és 
 .. figure:: 30_components/30_01_components_Battery_LIPO.jpg
     :align: center
 
-3.3.7 Reguladors de Voltatge
-----------------------------
+3.3.7. Reguladors de Voltatge
+-----------------------------
 
 .. figure:: 30_components/30_03_components_V_reg.jpg
     :align: center
@@ -223,3 +223,28 @@ Bateria d'ió liti en polímer o Bateria d'ió liti-polímer abreviat Li-Po és 
     :align: center
 
     Regulador OUT: 3.3v
+
+3.3.8. Placa PCB R2B2-nano
+--------------------------
+
+.. figure:: 20_control/20_02_control_board_REG.jpg
+    :align: center
+
+    Placa PCB del mòdul de control.
+
+
+3.3.9. Connector IPEX/U.FL 20278 1.13mm
+----------------------------------------
+
+.. figure:: 30_components/30_02_components_IPEX.jpg
+    :align: center
+
+    Connector IPEX/U.FL 20278 1.13mm.
+
+3.3.10 Motor de drone
+---------------------
+
+.. figure:: 30_components/30_01_components_motor_716.jpg
+    :align: center
+
+    Motors Drone (716 Coreless Motor).

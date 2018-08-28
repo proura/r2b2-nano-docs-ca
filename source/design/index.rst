@@ -118,10 +118,10 @@ d_screw_head    6.5 mm              Diametre del cap del cargol
 
     Base de càrrega (**base.scad**).
 
-2.3.2. Xassis
+2.3.2. Xassís
 -------------
 
-El xassís de l'R2B2-nano està format per dues parts. Una on hi ha tot el sistema d'alimentació (bobines receptores de corrent, controladors de càrrega per les bateries, les bateries i el regulador de voltatge) i l'altre on hi ha tota l'electrònica de control (Microcontrolador, el giroscopi/accelerometre, drivers de motors, etc...). 
+El xassís de l'R2B2-nano està format per dues parts. Una on hi ha tot el sistema d'alimentació (bobines receptores de corrent, controladors de càrrega per les bateries, les bateries i el regulador de voltatge) i l'altre on hi ha tota l'electrònica de control (Microcontrolador, el giroscopi/acceleròmetre, drivers de motors, etc...). 
 
 S'ha fet un disseny modular separant l'alimentació del control a proposit, ja que per a aconseguir impermeabilitzar tota l'electrònica somplen els xassís de resina de poliester, que un cop endurida fa que no es pugui accedir a modificar el contingut. El fet de tenir els dos moduls separats fa que podem reaprofitar-los en cas de voler fer modificacions en alguna de les parts.
 
