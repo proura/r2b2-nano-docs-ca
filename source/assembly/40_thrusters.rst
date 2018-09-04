@@ -43,7 +43,7 @@ Posant la vaselina entre l'eix i l'encapsulat aconseguirem que es pugui moure ll
 
 .. image:: 40_thrusters_images/40_02_thrusters_assembly.jpg
 
-A continuació posrem el motor dins l'encapsulat i apretarem fins que surt una mica de vaselina per el forat de l'eix.
+A continuació posarem el motor dins l'encapsulat i apretarem fins que surt una mica de vaselina per el forat de l'eix.
 
 .. image:: 40_thrusters_images/40_03_thrusters_assembly.jpg
 
@@ -52,7 +52,7 @@ Per evitar que ens entri aigua per la part posterior taparem l'encapsulat del mo
 .. image:: 40_thrusters_images/40_04_thrusters_assembly.jpg
 .. image:: 40_thrusters_images/40_05_thrusters_assembly.jpg
 
-Ara ja només en quedarà cargolar les hèlixs amb el cargol sense cap per que no s'escapin i tindrem els propulsors apunt.
+Ara ja només ens quedarà cargolar les hèlixs amb el cargol sense cap per que no s'escapin i tindrem els propulsors apunt.
 
 .. image:: 40_thrusters_images/40_06_thrusters_assembly.jpg
 .. image:: 40_thrusters_images/40_07_thrusters_assembly.jpg

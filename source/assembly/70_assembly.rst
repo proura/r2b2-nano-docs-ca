@@ -1,6 +1,6 @@
-================
-5.7. Assamblatge
-================
+===============
+5.7. Acoblament
+===============
 
 5.7.1. Que necessitem?
 **********************
@@ -35,9 +35,9 @@
 
 5.7.2 Muntatge
 **************
-Si estem en aquest punt vol dir que tenim totes les parts apunt. Primer agafarem els propulsors i els cargolarem a la base. Per això caldrà fer passar els cablés d'alimetació del xassís d'alimetació pel forat que hi ha al xassís de control.
+Si estem en aquest punt vol dir que tenim totes les parts apunt. Primer agafarem els propulsors i els cargolarem a la base. Per això caldrà fer passar els cables d'alimentació del xassís d'alimentació pel forat que hi ha al xassís de control.
 
-Si ho hem fet tot correctament ens quedarà l'R2B2-nano de la seguent manera.
+Si ho hem fet tot correctament ens quedarà l'R2B2-nano de la següent manera.
 
 .. image:: 70_assembly_images/70_01_assembly.jpg
 
@@ -49,7 +49,7 @@ Per cada parell de cables dels motors hi passarem una funda termoretràctil i ll
 
 .. image:: 70_assembly_images/70_03_assembly.jpg
 
-Per assegurar-nos de que sigui impermeable i no es curtcircuiti cubrirem les soldadures amb cola tèrmica i llavors hi posarem la funda termoretràctil a sobre i hi aplicarem calor pq s'hi ajusti, però sense exedir-nos ja que podem fondre la cola tèrmica i creuar els cables del motor.
+Per assegurar-nos de que sigui impermeable i no es curtcircuiti cobrirem les soldadures amb cola tèrmica i llavors hi posarem la funda termoretràctil a sobre i hi aplicarem calor pq s'hi ajusti, però sense excedir-nos ja que podem fondre la cola tèrmica i creuar els cables del motor.
 
 .. image:: 70_assembly_images/70_04_assembly.jpg
 
@@ -61,7 +61,7 @@ Per el cable d'alimentació restant hi muntarem un terminal DuPont mascle i un f
 
 .. image:: 70_assembly_images/70_06_assembly.jpg
 
-Ara els únics cables que ens queden a l'aire són els cables per el port de programació. Com que pràcticament no farem servir aquest port, nomes si tenim algun problema amb el WiFi o Firmware, l'encapsularem dins el protector de port.
+Ara els únics cables que ens queden a l'aire són els cables per el port de programació. Com que pràcticament no farem servir aquest port, només si tenim algun problema amb el WiFi o Firmware, l'encapsularem dins el protector de port.
 
 .. image:: 70_assembly_images/70_07_assembly.jpg
 
@@ -69,7 +69,7 @@ Agafarem una de les dues parts de protector del port, l'omplirem de vaselina i h
 
 .. image:: 70_assembly_images/70_08_assembly.jpg
 
-Ara agafarem l'altre part del protector i el cargolarem al damunt. Caldrà netejar amb un drap els exedents de vaselina que ens sortiran pels laterals del protector del port.
+Ara agafarem l'altre part del protector i el cargolarem al damunt. Caldrà netejar amb un drap els excedents de vaselina que ens sortiran pels laterals del protector del port.
 
 .. image:: 70_assembly_images/70_09_assembly.jpg
 

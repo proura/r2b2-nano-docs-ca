@@ -2,9 +2,9 @@
 3. Electrònica
 ==============
 
-L'R2B2-nano consta de dos mòduls. Un es l'encarregat de suplir corrent elèctrica, tan a motors com a components electrònics, i l'altre de controlar els dispositus i les comunicacions.
+L'R2B2-nano consta de dos mòduls. Un és l'encarregat de suplir corrent elèctrica, tan a motors com a components electrònics, i l'altre de controlar els dispositius i les comunicacions.
 
-Els esquemes i PCB dels dos mòduls estan en un projecte públic de la web EasyEDA anomentat `R2B2-nano <https://easyeda.com/r2b2osrov/r2b2-nano>`_.
+Els esquemes i PCB dels dos mòduls estan en un projecte públic de la web EasyEDA anomenatat `R2B2-nano <https://easyeda.com/r2b2osrov/r2b2-nano>`_.
 
 
 3.1. Alimentació
@@ -12,7 +12,7 @@ Els esquemes i PCB dels dos mòduls estan en un projecte públic de la web EasyE
 
 La base d'alimentació està formada per dues `bateries LIPO <#bateria-lipo>`_ de 3.7 volts connectades en sèrie arribant a un total de 7.4 volts. Cadascuna d'aquestes dues bateries està connectada a un `mòdul de càrrega TP4056 <#tp4056-dw01a>`_ que a més a més de gestionar la càrrega les protegeix tan de sobrecàrregues com de infracàrregues. El mòdul de càrrega TP4056 disposa d'un port USB com a entrada de corrent, però per evitar connectors amb possible contacte amb l'aigua s'ha optat per posar un receptor de corrent sense fils (`Qi Receiver <#cargador-qi-i-receptor-qi>`_).
 
-Per ajustar la sortida de voltage als requeriments del mòdul de control s'ha connectat un `Regulador de Voltatge <#reguladors-de-voltatge>`_ a la sortida de les dues bateries en sèrie. 
+Per ajustar la sortida de voltatge als requeriments del mòdul de control s'ha connectat un `Regulador de Voltatge <#reguladors-de-voltatge>`_ a la sortida de les dues bateries en sèrie. 
 
 3.2.1. Esquemàtics
 ------------------
@@ -37,13 +37,13 @@ Podeu veure com muntar aquest mòdul a l'apartat `Xassís Alimentació <../assem
 3.2. Control
 ************
 
-El mòdul de control de l'R2B2-nano és l'encarregat de comunicar-se amb l'exterior i transmetre les ordres sol·licitades als diferents components. Té com a microntrolador un `ESP32 WROVER <#esp32-wrover-i-espressif>`_ que incorpora WiFi/Bluetooth i a través d'un connector coaxial ens permet treure un cable fins a la superfície per a realitzar les comunicacions.
+El mòdul de control de l'R2B2-nano és l'encarregat de comunicar-se amb l'exterior i transmetre les ordres sol·licitades als diferents components. Té com a microcontrolador un `ESP32 WROVER <#esp32-wrover-i-espressif>`_ que incorpora WiFi/Bluetooth i a través d'un connector coaxial ens permet treure un cable fins a la superfície per a realitzar les comunicacions.
 
-Disposem de dos controladors de motors `TB6612FNG <#tb6612fng-thosiba>`_ que ens permet controlar a través de modulació per amplada de polsos (PWM) fins a 4 dispositus, en el nostre cas els motors dels propulsors. 
+Disposem de dos controladors de motors `TB6612FNG <#tb6612fng-thosiba>`_ que ens permet controlar a través de modulació per amplada de polsos (PWM) fins a 4 dispositius, en el nostre cas els motors dels propulsors. 
 
 També disposa d'un giroscopi i accelerometer `MPU 6050 <#mpu-6050-invensense>`_ que ens pot enviar informació del posicionament que té l'R2B2-nano en cada moment i realitzar les operacions que es creguin oportunes.
 
-Tots els dispositius que hi ha al mòdul de control funcionen a 3.3 volts, per tant ens cal un `Regualdor <#reguladors-de-voltatge>`_ per rebaixar el voltage que ens proporciona el mòdul d'alimentació als 3.3 volts.
+Tots els dispositius que hi ha al mòdul de control funcionen a 3.3 volts, per tant ens cal un `Regualdor <#reguladors-de-voltatge>`_ per baixar el voltatge que ens proporciona el mòdul d'alimentació als 3.3 volts.
 
 3.2.1. Esquemàtics
 ------------------
@@ -60,7 +60,7 @@ Es pot trobar l'esquema electronic "r2b2-nano-board" al projecte públic `R2B2-n
 
 Per a muntar el mòdul de control hi ha varies opcions: 
 
-*  Es pot cablejar sobre els mateixos components com es motra a la següent imatge. Això ens pot servir per fer un prototip, però no es recomanable ja que és molt fàcil comtre errors o que se'ns malmetin les soldadures al manipular la placa.
+*  Es pot cablejar sobre els mateixos components com es mostra a la següent imatge. Això ens pot servir per fer un prototip, però no es recomanable ja que és molt fàcil cometre errors o que se'ns malmetin les soldadures al manipular la placa.
 
 .. figure:: 20_control/20_01_control_NOPCB.jpg
     :align: center
@@ -91,7 +91,7 @@ Podeu veure com muntar aquest mòdul a l'apartat `Xassís Control <../assembly/3
 3.2.3 Connexions ESP32
 ----------------------
 
-Al l'equema següent podem veure que hi ha connectat a cada port de l'EPS23 WROVER. 
+Al l'esquema següent podem veure que hi ha connectat a cada port de l'EPS32 WROVER. 
 
 .. figure:: 20_control/20_02_control_ESP32_PINOUT.jpg
     :align: center
@@ -177,7 +177,7 @@ The DW01A battery protection IC is designed to protect lithium-ion/polymer batte
 .. figure:: 30_components/30_01_components_Battery_module.jpg
     :align: center
 
-    Esquema elèctric del modul de càrrega.
+    Esquema elèctric del mòdul de càrrega.
 
 .. figure:: 30_components/30_02_components_Battery_module.jpg
     :align: center

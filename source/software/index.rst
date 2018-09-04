@@ -4,7 +4,7 @@
 
 En aquest apartat es descriurà una proposta de com programar i utilitzar l'R2B2-nano, però cadascú pot realitzar o adaptar la proposta a les seves necessitats o tecnologies.
 
-La programació està separada en tres grans apartats: el servidor de missatjeria MQTT que s'utilitza com a sistema de comunicació, el firmware de l'R2B2-nano fet amb Arduino IDE i el programa de control fet amb Processing IDE.
+La programació està separada en tres grans apartats: el servidor de missatgeria MQTT que s'utilitza com a sistema de comunicació, el firmware de l'R2B2-nano fet amb Arduino IDE i el programa de control fet amb Processing IDE.
 
 .. note:: Els passos que es proposen en tota la documentació estan execuats al terminal d'un sistema operatiu GNU/Linux **Debian** i amb el **mosquito client MQTT** instal·lat.
 
@@ -55,12 +55,12 @@ Llavors els dispositius que volen rebre la informació dels R2B2-nanos o d'un so
 
 Per tant ja tenim una manera de comunicar dispositius i R2B2-nanos. Cada R2B2-nano publica les dades amb el tòpic format pel seu propi ID ("r2b2/r2b2Id/XXXX") i es subscriu al tòpic que li correspon a ell mateix r2b2/r2b2Id/tasks per rebre les ordres a executar i cada dispositiu que vulgui controlar un R2B2-nano en concret es subscriu al tòpic r2b2/r2b2Id/# i publica a r2b2/r2b2Id/tasks. 
 
-Daquesta manera també podem fer que un dispositiu controli i/o observi més d'un R2B2-nano. Si es subscriu al tòpic "r2b2/#" rebrà la infromació de tots els R2B2-nanos.
+Daquesta manera també podem fer que un dispositiu controli i/o observi més d'un R2B2-nano. Si es subscriu al tòpic "r2b2/#" rebrà la informació de tots els R2B2-nanos.
 
 .. figure:: 10_MQTT/10_01_MQTT_server.jpeg
     :align: center
 
-    Communicacions R2B2-nano.
+    Comunicacions R2B2-nano.
 
 Des de la consola ens podem subscriure al servidor MQTT que estiguem fent servir i veure tots els missatges que s'estan intercanviant. Això pot ser molt útil per depurar les comunicacions entre R2B2-nanos i els programes de control.
 
@@ -98,7 +98,7 @@ El firmware de l'R2B2-nano està desenvolupat amb l'`Arduino IDE <https://www.ar
 
 Per poder compilar el firmware caldrà afegir la placa ESP32 seguint les instruccions oficials del `GitHub d'espressif <https://github.com/espressif/arduino-esp32>`_ i instal·lar les llibreries **PubSubClient** i **MPU6050_tockn** a través del menú Sketch-->Include Library-->Manage Libraries. 
 
-La llibreria PubSubClients és per publicar i subscriure en un servidor MQTT i la llibreira MPU6050_tockn per llegir els valors de Giroscopi i acceleròmetre. 
+La llibreria PubSubClients és per publicar i subscriure en un servidor MQTT i la llibreria MPU6050_tockn per llegir els valors de Giroscopi i acceleròmetre. 
 
 Un cop fet això ja podem obrir el projecte 99_R2B2_Nano_Firmware d'Arduino IDE que trobarem a la carpeta codi del projecte R2B2-nano, configurar la placa com a ESP32 Dev Module i seleccionar el Port on estigui connectat.
 
@@ -107,7 +107,7 @@ Un cop fet això ja podem obrir el projecte 99_R2B2_Nano_Firmware d'Arduino IDE 
 
     Configuració Arduino IDE.
 
-.. warning:: El primer cop que es puja el firmware s'ha de fer amb un conversor de USB a TTY connectant el port RX de R2B2-nano al TX del conversor TTY, el port TX de R2B2-nano al RX del conversor TTY, connectar el GND de l'R2B2-nano amb el GND del conversor TTY i posant la placa en mode "serial bootloader", això es fa posant el port GPIO0 (BOOT) a LOW/GND i fent un reset posant l'enable (EN) a LOW/GND. Un cop feta la primera pujada ens apareixera l'R2B2 al llistat de ports i podrem actualitzar el firmware a través de WiFi.
+.. warning:: El primer cop que es puja el firmware s'ha de fer amb un conversor de USB a TTY connectant el port RX de R2B2-nano al TX del conversor TTY, el port TX de R2B2-nano al RX del conversor TTY, connectar el GND de l'R2B2-nano amb el GND del conversor TTY i posant la placa en mode "serial bootloader", això es fa posant el port GPIO0 (BOOT) a LOW/GND i fent un reset posant l'enable (EN) a LOW/GND. Un cop feta la primera pujada ens apareixerà l'R2B2 al llistat de ports i podrem actualitzar el firmware a través de WiFi.
 
 .. figure:: 20_Firmware/20_02_Firmware_AIDE.jpg
     :align: center
@@ -226,7 +226,7 @@ Per que poguem actualitzar el firmware a través de WiFi cal que sempre hi hagi 
 4.2.2.3. Estructura del codi
 ++++++++++++++++++++++++++++
 
-En el **setup** del codi inicialitzarem els motors, el WiFi, l'OTA, la connexió al servidor MQTT i el Giroscopi/Acceleròmetre. Llavors dins al **loop** estarem pendents de si arriba alguna petició d'actulizació de firmware o algun missatge MQTT.
+En el **setup** del codi inicialitzarem els motors, el WiFi, l'OTA, la connexió al servidor MQTT i el Giroscopi/Acceleròmetre. Llavors dins al **loop** estarem pendents de si arriba alguna petició d'actualització de firmware o algun missatge MQTT.
 
 .. code-block:: c
 
@@ -314,7 +314,7 @@ A la **inicialització del WiFi** assignarem una funció per caçar els events d
         }
     }
 
-Quan **inicialitzem l'MQTT**, a més a més d'indicar a quin servidor i port connectar, assignem una **Callback Function**. Aquesta funció és la que s'ejecutarà quan és rep un missatge. La funció de **Callback** rep com a paràmetres el tòpic, el bytes d'informació i la longitud de la trama i en funció del missatge que rebi executarà una acció o una altre.
+Quan **inicialitzem l'MQTT**, a més a més d'indicar a quin servidor i port connectar, assignem una **Callback Function**. Aquesta funció és la que s'ejecutarà quan es rep un missatge. La funció de **Callback** rep com a paràmetres el tòpic, el bytes d'informació i la longitud de la trama i en funció del missatge que rebi executarà una acció o una altre.
 
 .. code-block:: c
 
@@ -373,14 +373,14 @@ A la **inicialització del MPU6050** Giroscopi/Acceleròmetre tan sols indiquem 
 4.3. Control
 ------------
 
-Com hem vist en els punts anteriors de la documentació la communicació entre els R2B2-nanos i els programes de control es fa a través de missatges MQTT. Per tant es pot desenvolupar el programa de control amb qualsevol eina que tingui una llibreria MQTT i pugui subscriures i enviar missatges a un tòpic.
+Com hem vist en els punts anteriors de la documentació la comunicació entre els R2B2-nanos i els programes de control es fa a través de missatges MQTT. Per tant es pot desenvolupar el programa de control amb qualsevol eina que tingui una llibreria MQTT i pugui subscriure's i enviar missatges a un tòpic.
 
 4.3.1. Processing IDE
 *********************
 
-El programa de control que hi ha desenvolupat al projecte del GitHub està realitzat amb el `Processing IDE <https://processing.org/>`_, ja que dona molta facilitat a l'hora de ralitzat un programa executable en un sistema operatiu Android.
+El programa de control que hi ha desenvolupat al projecte del GitHub està realitzat amb el `Processing IDE <https://processing.org/>`_, ja que dona molta facilitat a l'hora de realitzar un programa executable en un sistema operatiu Android.
 
-Per preparar el Processing IDE caltrà instal·lar el mode Android, fent clic al desplegable de la contonada superior dreta on posa Java i seleccionar "Add Mode...". Dins el menú que se'ns obre seleccionarem l'Android Mode i clicarem el botó install.
+Per preparar el Processing IDE caldrà instal·lar el mode Android, fent clic al desplegable de la cantonada superior dreta on posa Java i seleccionar "Add Mode...". Dins el menú que se'ns obre seleccionarem l'Android Mode i clicarem el botó install.
 
 .. figure:: 30_Control/30_01_Control_Processing_AND.jpg
     :align: center
@@ -404,10 +404,10 @@ L'Interficie de control permet processar les dades del Giroscopi/Acceleròmetre 
 **Funcionalitats de la interfície:**
 
 ======== ===============================================================
-Boto     Funció
+Botó     Funció
 ======== ===============================================================
-P+(q)    Incrementar la potencia dels motors
-P-(a)    Decrementar la potencia dels motors
+P+(q)    Incrementar la potència dels motors
+P-(a)    Decrementar la potència dels motors
 UP       Pujar cap a la superfície
 DW       Baixar cap al fons
 R+       Rotar sobre els propulsors laterals +
@@ -416,7 +416,7 @@ FL       Girar endavant cap a l'esquerra
 FW       Anar endavant
 FR       Girar endavant cap a la dreta
 BL       Girar endarrera cap a l'esquerra
-BW       Anar endarrera
+BW       Anar endarrere
 BR       Girar endarrera cap a la dreta
 STOP     Parar tots els motors
 CLBT     Calibrar el Giroscopi/Acceleròmetre
@@ -433,7 +433,7 @@ RST      Test de motors (no reflexa resultats en pantalla)
 4.3.3.1. Configuració
 +++++++++++++++++++++
 
-Com hem vist en el punt `4.1 <#mqtt-server>`_ cada R2B2-nano te un identificador que fa servir per publicar al un servidor MQTT. Per tant cal que especifiquem al programa de control quin R2B2-nano volem controlar i a quin servidor MQTT ens em de connectar. Això ho fem definint les variables **r2b2Id** i **MQTTServer** al principi del codi.
+Com hem vist en el punt `4.1 <#mqtt-server>`_ cada R2B2-nano te un identificador que fa servir per publicar al un servidor MQTT. Per tant cal que especifiquem al programa de control quin R2B2-nano volem controlar i a quin servidor MQTT ens hem de connectar. Això ho fem definint les variables **r2b2Id** i **MQTTServer** al principi del codi.
 
 .. code-block:: c
 
@@ -443,7 +443,7 @@ Com hem vist en el punt `4.1 <#mqtt-server>`_ cada R2B2-nano te un identificador
 4.3.3.2. Estructura del codi
 ++++++++++++++++++++++++++++
 
-En el setup del codi ens subcrivim al tòpic corresponent a l'R2B2-nano que volem controlar. Un cop fet això anem sol·licitant cada 300 milisegons els valors del Giroscopi/Acceleròmetre. Mirem si hi ha alguna ordre de moviement activa i en cas afirmatiu activem els motors corresponents. Llavors mirarem quins punts de la pantalla s'estan tocant i si corresponen a algun dels botons. Per finalitzar dibuixem els botons i l'R2B2-nano en la posició que hem llegit del Giroscopi/Acceleròmetre.
+En el setup del codi ens subscrivim al tòpic corresponent a l'R2B2-nano que volem controlar. Un cop fet això anem sol·licitant cada 300 mil·lisegons els valors del Giroscopi/Acceleròmetre. Mirem si hi ha alguna ordre de moviment activa i en cas afirmatiu activem els motors corresponents. Llavors mirarem quins punts de la pantalla s'estan tocant i si corresponen a algun dels botons. Per finalitzar dibuixem els botons i l'R2B2-nano en la posició que hem llegit del Giroscopi/Acceleròmetre.
 
 
 

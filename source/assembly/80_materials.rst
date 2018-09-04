@@ -47,7 +47,7 @@ A.1.1. Estany
 .. figure:: 80_materials_images/00_05_Materials_soldering_tin.jpg
     :align: center
 
-A.1.1. Resina Poliester 
+A.1.1. Resina Polièster 
 -----------------------
 
 .. figure:: 80_materials_images/00_05_Materials_Synolite.jpg

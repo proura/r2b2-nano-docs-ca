@@ -21,7 +21,7 @@ L'R2B2-nano és un projecte OpenSource per a la realització d'un ROV imprimible
 1.1. Descàrrega del projecte
 ----------------------------
 
-Per a poder crear el teu R2B2-nano cal que et descarreguis els dissenys i programes que hi ha als repositoris de `GitHub <https://github.com/r2b2osrov/r2b2-nano>`_.
+Per a poder crear el teu R2B2-nano cal que et descarreguem els dissenys i programes que hi ha als repositoris de `GitHub <https://github.com/r2b2osrov/r2b2-nano>`_.
 
 .. note:: Els passos que es proposen en tota la documentació estan execuats al terminal d'un sistema operatiu **Debian** amb el **git** instal·lat. No hi ha d'haver cap problema per realitzar les mateixes tasques sobre altres sistemes operatius com Window o macOS.
 
@@ -51,14 +51,14 @@ També es pot descarregar amb la comanda següent:
     -rw-rw-r-- 1 r2b2 r2b2 35147 ago 24 08:59 LICENSE
     -rw-rw-r-- 1 r2b2 r2b2    32 ago 24 08:59 README.md
 
-Tots el dissenys 3D de les peces realitzats amb OpenSCAD i els seus STL per enviar a imprimir estan dins la carpeta **design**. Per com fer-ne us i personalitzar el vostre R2B2-nano mireu l'apartat `Disseny <../design/index.html>`_.
+Tots el dissenys 3D de les peces realitzats amb OpenSCAD i els seus STL per enviar a imprimir estan dins la carpeta **design**. Per com fer-ne ús i personalitzar el vostre R2B2-nano mireu l'apartat `Disseny <../design/index.html>`_.
 
-Dins la carpeta **code** hi podem trobar diferents programes d'`Arduino IDE <https://www.arduino.cc/>`_ per testejar la placa i els components electrònics, el Firmware de l'R2B2-nano i el prgrama de control fet amb `Processing IDE <https://processing.org/>`_ per controlar l'R2B2-nano des del mòbil. Tots aquest punts estan explicats amb més detall a l'apartat `Software <../software/index.html>`_.
+Dins la carpeta **code** hi podem trobar diferents programes d'`Arduino IDE <https://www.arduino.cc/>`_ per testejar la placa i els components electrònics, el Firmware de l'R2B2-nano i el programa de control fet amb `Processing IDE <https://processing.org/>`_ per controlar l'R2B2-nano des del mòbil. Tots aquests punts estan explicats amb més detall a l'apartat `Software <../software/index.html>`_.
 
 1.1.2. EasyEDA 
 **************
 
-Tots els esquemes electronics i els dissenys de les plaques PCB estan allotjades en un projecte public de `EasyEDA <https://easyeda.com/r2b2osrov/r2b2-nano>`_. Des d'aquesta mateixa pàgina es poden demanar les plaques PCB a JLPCB o descarregar els fitxer Gerber per enviar la placa a producció a qualsevol altre lloc.
+Tots els esquemes electrònics i els dissenys de les plaques PCB estan allotjades en un projecte públic de `EasyEDA <https://easyeda.com/r2b2osrov/r2b2-nano>`_. Des d'aquesta mateixa pàgina es poden demanar les plaques PCB a JLPCB o descarregar els fitxer Gerber per enviar la placa a producció a qualsevol altre lloc.
 
 1.1.3. Documentació
 *******************
@@ -114,12 +114,12 @@ Un cop descarregada podem editar-la i generar localment els fitxers html per com
 1.2. Col·labora
 ---------------
 
-l'R2B2-nano és un projecte OpenSource i està obert a qualsevol tipus de col·laboració. Com pots col·laborar?
+l'R2B2-nano és un projecte Open Source i està obert a qualsevol tipus de col·laboració. Com pots col·laborar?
 
 **Construeix el teu R2B2** i comenta-ho a les xarxes, envia'ns feedback i disfruta del projecte!!! 
 
 **Escriu Codi** per millorar els Firmware i el programa per controlar el R2B2-nano.
 
-**Reporta Issues** als nostres projectes publics com `GitHub <https://github.com/r2b2osrov/r2b2-nano>`_ o `EasyEDA <https://easyeda.com/r2b2osrov/r2b2-nano>`_. 
+**Reporta Issues** als nostres projectes públics com `GitHub <https://github.com/r2b2osrov/r2b2-nano>`_ o `EasyEDA <https://easyeda.com/r2b2osrov/r2b2-nano>`_. 
 
 **Contribueix en la Documentació** tan sigui millorant-la per que es pugui entendre millor com tranduint-la a altres idiomes.

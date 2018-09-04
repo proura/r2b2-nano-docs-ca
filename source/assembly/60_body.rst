@@ -10,7 +10,7 @@
 
 *  Escuma FOAM
 *  `Cola Tèrmica <80_materials.html#cola-temica>`_
-*  Massilla de poliester
+*  Massilla de polièster
 *  Esprai d'imprimació
 *  Esprai pintura
 

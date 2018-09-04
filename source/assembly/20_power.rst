@@ -16,7 +16,7 @@
 *  `Cable elèctic de silicona 28 AWG <80_materials.html#cable-silicona-28awg>`_
 *  `Estany <80_materials.html#estany>`_
 *  `Cola Tèrmica <80_materials.html#cola-temica>`_
-*  `Resina de poliester i catalitzador <80_materials.html#resina-poliester>`_
+*  `Resina de polièster i catalitzador <80_materials.html#resina-polièster>`_
 *  Cinta aïllant
 
 5.2.1.2 Eines
@@ -99,15 +99,15 @@ Tornem a col·locar els receptors Qi a la base, però ara fent passar els cables
 .. image:: 20_power_images/20_18_power_assembly.jpg
 .. image:: 20_power_images/20_19_power_assembly.jpg
 
-Ara ja podem soldar cadascún dels receptors Qi al mòdul de càrrega. 
+Ara ja podem soldar cadascun dels receptors Qi al mòdul de càrrega. 
 
-.. warning:: Cal comprovar amb un tester quin es el pol positiu i negatiu de cada receptor Qi. Per fer això posarem el receptor Qi modul sobre un emisor Qi endollat i connectarem els dos cables al tester. 
+.. warning:: Cal comprovar amb un tester quin és el pol positiu i negatiu de cada receptor Qi. Per fer això posarem el receptor Qi mòdul sobre un emisor Qi endollat i connectarem els dos cables al tester. 
 
-    És molt importart també posar els components amb la orientació correcte, ja que els cables d'alimentació accedeixen al xassís de control per un forat fet a proposit.
+    És molt important també posar els components amb la orientació correcte, ja que els cables d'alimentació accedeixen al xassís de control per un forat fet a propòsit.
 
 .. image:: 20_power_images/20_20_power_assembly.jpg
 
-Arribats a aquest punt ja tenim la base d'alimentació apunt per enresinar. Només caldrà verificar que tenim la corrent de sortida desitjada amb un tester, tapar amb cinta aïllant els dos cables i colocar els element i cables dins al xassís de tal manera que no sobresurtin. 
+Arribats a aquest punt ja tenim la base d'alimentació a punt per enresinar. Només caldrà verificar que tenim el voltatge de sortida desitjat amb un tester, tapar amb cinta aïllant els dos cables i col·locar els element i cables dins al xassís de tal manera que no sobresurtin. 
 
 .. image:: 20_power_images/20_21_power_assembly.jpg
 
@@ -116,9 +116,9 @@ Per enresinar podem fer servir qualsevol motlle de silicona, tan per fer la mesc
 .. image:: 20_power_images/20_22_power_assembly.jpg
 
 #.  Primer de tot farem una base d'1 a 2 milimetres de resina i la deixarem assecar.
-#.  Col·locarem la base a dins al motlle sobre la resina seca.
+#.  Col·locarem la base a dins el motlle sobre la resina seca.
 #.  Prepararem més resina i la bolcarem dins el motlle fins a quasi arribar a l'alçada del suports.
-#.  Un cop assecada la resina omplirem la base d'alimentació fins a cubrir tots els dispositius electrònics, cables i bateries. Només deixarem sortir els dos cables, positiu i negatiu, tal i com es motra a les següents imatges.
+#.  Un cop assecada la resina omplirem la base d'alimentació fins a cobrir tots els dispositius electrònics, cables i bateries. Només deixarem sortir els dos cables, positiu i negatiu, tal i com es mostra a les següents imatges.
 
 .. image:: 20_power_images/20_22b_power_assembly.jpg
     :align: center
@@ -130,7 +130,7 @@ Un cop assecada la resina ja podem treure la base del motlle i retallar els sobr
 
 .. image:: 20_power_images/20_25_power_assembly.jpg
 
-Ja tenim la base d'alimentació apunt!!!
+Ja tenim la base d'alimentació a punt!!!
 
 .. image:: 20_power_images/20_26_power_assembly.jpg
 .. image:: 20_power_images/20_27_power_assembly.jpg

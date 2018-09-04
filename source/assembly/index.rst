@@ -10,7 +10,7 @@
 #.  Propulsors
 #.  Boia
 #.  Carcassa
-#.  Assamblatge
+#.  Acoblament
 
 **Llistat del material necessari**
 

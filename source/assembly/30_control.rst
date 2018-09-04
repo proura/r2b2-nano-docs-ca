@@ -21,7 +21,7 @@
 *  1x `Cable coaxial d'antena 1.13mm i 50ohm de 5metres <80_materials.html#cable-coaxial>`_
 *  `Cable elèctic de silicona 28 AWG <80_materials.html#cable-silicona-28awg>`_
 *  `Estany <80_materials.html#estany>`_
-*  `Resina de poliester i catalitzador <80_materials.html#resina-poliester>`_
+*  `Resina de polièster i catalitzador <80_materials.html#resina-polièster>`_
 
 5.3.1.2 Eines
 -------------
@@ -46,11 +46,11 @@ A l'apartat de `Electrònica-->Control <../electro/index.html#control>`_ es prop
 
 .. image:: ../electro/20_control/20_01_control_schematic.png
 
-Per a soldar els components a sobre la placa és recomanable començar per l'ESP32 (per facilitar la soldarura d'aquest component és recomanable fer servir algun tipus de pasta de soldadura Flux NC-559 o similars). Llavors podeu anar soldant tots els altres components tal i com és mostren a la següent imatge.
+Per a soldar els components a sobre la placa és recomanable començar per l'ESP32 (per facilitar la soldadura d'aquest component és recomanable fer servir algun tipus de pasta de soldadura Flux NC-559 o similars). Llavors podeu anar soldant tots els altres components tal i com és mostren a la següent imatge.
 
 .. image:: 30_control_images/30_01_control_assembly.jpg
 
-Un cop es tinguin tots els components soldats és convenient comprovar amb un tester que totes les connexions estan ben soldades. Per això posarem el tester que ens avisi amb senyal acustica si hi ha continuitat i comprovarem els punts de soldadura seguint l'esquema. 
+Un cop es tinguin tots els components soldats és convenient comprovar amb un tester que totes les connexions estan ben soldades. Per això posarem el tester que ens avisi amb senyal acústica si hi ha continuïtat i comprovarem els punts de soldadura seguint l'esquema. 
 
 Si tot els punts de soldadura estan bé, alimentarem la placa i farem la primera pujada del Firmware com s'explica a l'apartat de `Software-->Firmware <../software/index.html#firmware>`_. Així podrem comprovar que tots els ports a on connectar els motors i el Giroscopi/Acceleròmetre funcionen correctament.
 
@@ -65,7 +65,7 @@ Agafarem el cable coaxial i hi muntarem el connector IPEX.
 .. image:: 30_control_images/30_04_control_assembly.jpg
 .. image:: 30_control_images/30_05_control_assembly.jpg
 
-Conectarem l'antena a la placa i col·locarem tots els cables apunt per enresinar el xassís. 
+Connectarem l'antena a la placa i col·locarem tots els cables a punt per enresinar el xassís. 
 
 .. image:: 30_control_images/30_06_control_assembly.jpg
 .. image:: 30_control_images/30_07_control_assembly.jpg

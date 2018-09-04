@@ -2,9 +2,9 @@
 2. Disseny
 ==========
 
-El disseny de l'R2B2-nano és completament parametritzable i es pot adaptar ràpidament a les necessitats o dispositius de que es disponin tan sols canviant pocs parametres.
+El disseny de l'R2B2-nano és completament parametritzable i es pot adaptar ràpidament a les necessitats o dispositius de que es disponin tan sols canviant pocs paràmetres.
 
-A continuació explicarem com treballar amb el disseny i quins són els parametres que afecten a cada part del disseny.
+A continuació explicarem com treballar amb el disseny i quins són els paràmetres que afecten a cada part del disseny.
 
 .. figure:: design_images/r2b2_no_body_01.png
     :align: center
@@ -17,18 +17,18 @@ A continuació explicarem com treballar amb el disseny i quins són els parametr
 
 El disseny de l'R2B2-nano està realitzat 100% en `OpenSCAD <http://www.openscad.org/>`_. 
 
-OpenSCAD és una aplicació lliure per crear objectes sòlids de CAD. No és un editor interactiu sino un compilador 3D basat en un llenguatge de descripció textual. Un document d'OpenSCAD especifica primitives geomètriques i defineix com son modificades i manipulades per reproduir un model 3D.
+OpenSCAD és una aplicació lliure per crear objectes sòlids de CAD. No és un editor interactiu sino un compilador 3D basat en un llenguatge de descripció textual. Un document d'OpenSCAD específica primitives geomètriques i defineix com son modificades i manipulades per reproduir un model 3D.
 
-Que l'OpenSCAD sigui un llenguatge ens permet per una banda parametritzar tots els objectes de forma molt senzilla i per altra banda ens permet col·laborar d'una manera molt més àgil, ja que la modificació d'un objecte queda reflexada en quina linia de codi s'ha modificat, no en tot un fitxer binari o d'aplicació.
+Que l'OpenSCAD sigui un llenguatge ens permet per una banda parametritzar tots els objectes de forma molt senzilla i per altra banda ens permet col·laborar d'una manera molt més àgil, ja que la modificació d'un objecte queda reflexada en quina línia de codi s'ha modificat, no en tot un fitxer binari o d'aplicació.
 
 És molt util tindre l'`OpenSCAD CheatSheet <http://www.openscad.org/cheatsheet/index.html>`_ a mà cada cop que volem fer algun disseny o modificació.
 
 2.2. Configuració
 *****************
 
-Tots els parametres es troben al fitxer **config.scad** de la carpeta **design**. Podem definir l'amplada de les parets de tot el 3D, les mides del motors, dels propulsors, la mida dels cargols, etc... i cada parametre que ajustem fa que tot el disseny s'hi adapti, així de forma ràpida i sense haver de redibuixar tot el 3D disposem de les peces idònies al nostre muntatge.
+Tots els paràmetres es troben al fitxer **config.scad** de la carpeta **design**. Podem definir l'amplada de les parets de tot el 3D, les mides del motors, dels propulsors, la mida dels cargols, etc... i cada paràmetre que ajustem fa que tot el disseny s'hi adapti, així de forma ràpida i sense haver de redibuixar tot el 3D disposem de les peces idònies al nostre muntatge.
 
-A més a més dels parametres que especifiquen les mides del disseny hi ha el paràmetre **$fn** que definex en número de fragments en que es renderitzaran les circumferències completes. Com més gran sigui el valor de $fn més tardarà a fer el renderitzat. No és recomanable un valor superior a 100.
+A més a més dels paràmetres que especifiquen les mides del disseny hi ha el paràmetre **$fn** que defineix en número de fragments en que es renderitzaran les circumferències completes. Com més gran sigui el valor de $fn més tardarà a fer el renderitzat. No és recomanable un valor superior a 100.
 
 .. code-block:: none
 
@@ -89,9 +89,9 @@ A més a més dels parametres que especifiquen les mides del disseny hi ha el pa
 2.3.1. Base de càrrega
 ----------------------
 
-La base de càrrega és on hi van les dues bobines transmisores capaces de generear el camp magnètic que un cop connectada amb els USBs a la corrent i posem l'R2B2-nano a sobre ens carregarà les bateries.
+La base de càrrega és on hi van les dues bobines transmisores capaces de generar el camp magnètic que un cop connectada amb els USBs a la corrent i posem l'R2B2-nano a sobre ens carregarà les bateries.
 
-La base de càrrega tan sols utilitza com a paràmetres les mides del cargols que volem fer servir. Per tant tan sols comprobarem els següents parametres a la configuració:
+La base de càrrega tan sols utilitza com a paràmetres les mides del cargols que volem fer servir. Per tant tan sols comprovarem els següents paràmetres a la configuració:
 
 .. code-block:: console
 
@@ -104,11 +104,11 @@ La base de càrrega tan sols utilitza com a paràmetres les mides del cargols qu
     d_screw_head=6.5        //screw head diameter
 
 ============    =================   ==================================================
-Parametre       Valor per defecte   Descripció
+Paràmetre       Valor per defecte   Descripció
 ============    =================   ==================================================
-d_screw_h       3 mm                Diametre de la tija del cargol on ha de collar
-d_screw_p       d_screw_h+0.4 mm    Diametre on ha de passar el cargol sense collar 
-d_screw_head    6.5 mm              Diametre del cap del cargol
+d_screw_h       3 mm                Diàmetre de la tija del cargol on ha de collar
+d_screw_p       d_screw_h+0.4 mm    Diàmetre on ha de passar el cargol sense collar 
+d_screw_head    6.5 mm              Diàmetre del cap del cargol
 ============    =================   ==================================================
 
 
@@ -123,9 +123,9 @@ d_screw_head    6.5 mm              Diametre del cap del cargol
 
 El xassís de l'R2B2-nano està format per dues parts. Una on hi ha tot el sistema d'alimentació (bobines receptores de corrent, controladors de càrrega per les bateries, les bateries i el regulador de voltatge) i l'altre on hi ha tota l'electrònica de control (Microcontrolador, el giroscopi/acceleròmetre, drivers de motors, etc...). 
 
-S'ha fet un disseny modular separant l'alimentació del control a proposit, ja que per a aconseguir impermeabilitzar tota l'electrònica somplen els xassís de resina de poliester, que un cop endurida fa que no es pugui accedir a modificar el contingut. El fet de tenir els dos moduls separats fa que podem reaprofitar-los en cas de voler fer modificacions en alguna de les parts.
+S'ha fet un disseny modular separant l'alimentació del control a proposìt, ja que per a aconseguir impermeabilitzar tota l'electrònica s'omplen els xassís de resina de polièster, que un cop endurida fa que no es pugui accedir a modificar el contingut. El fet de tenir els dos mòduls separats fa que podem reaprofitar-los en cas de voler fer modificacions en alguna de les parts.
 
-Els principals paràmetres que cal que tinguem en compte a l'hora de configurar el xassís és l'amplada, la llargada i la profunditat dels dos mòduls per tal d'assegurar-nos que quan fem el bany de resina de poliester l'electrònica quedi totalment coberta.
+Els principals paràmetres que cal tenir en compte a l'hora de configurar el xassís és l'amplada, la llargada i la profunditat dels dos mòduls per tal d'assegurar-nos que quan fem el bany de resina de polièster l'electrònica quedi totalment coberta.
 
 .. code-block:: console
 
@@ -143,9 +143,9 @@ Els principals paràmetres que cal que tinguem en compte a l'hora de configurar 
     h_control=12        //chassis control height
 
 ============    =================   ==================================================
-Parametre       Valor per defecte   Descripció
+Paràmetre       Valor per defecte   Descripció
 ============    =================   ==================================================
-d_screw_h       3 mm                Diametre de la tija del cargol on ha de collar
+d_screw_h       3 mm                Diàmetre de la tija del cargol on ha de collar
 w_walls         2.7 mm              Amplada de les parets  
 w_support       8 mm                Amplada dels suports del propulsors
 h_support       8 mm                Profunditat dels suports del propulsors
@@ -160,7 +160,7 @@ h_control       12 mm               Alçada de la zona d'electrònica de control
 
     Xassís d'alimentació i control (**chassis.scad**).
     
-L'R2B2-nano es programa a través de Wifi (OTA / Over-the-air programming), però pot ser que algun cop ens trobrem amb problemes, es carregui un firmware erroni i no ens permeti la programació a través de wifi.
+L'R2B2-nano es programa a través de Wifi (OTA / Over-the-air programming), però pot ser que algun cop ens trobrem amb problemes, es carregui un firmware erròni i no ens permeti la programació a través de wifi.
 
 Per això és important deixar un port sèrie disponible per poder accedir a programar l'ESP32 amb conversor USB to tty. Aquest port sèrie es compon de 5 cables i mentre no es fan servir cal que estiguin protegits per no crear curtcircuits. Els cables que componen el port es col·loquen dins el protector del port i es farceix de vaselina per que no hi pugui entrar l'aigua.
 
@@ -175,9 +175,9 @@ L'únic paràmtre que hem de tenir en compte és la mida del cargols que farem s
     d_screw_h=3 //screw hole diameter
 
 ============    =================   ==================================================
-Parametre       Valor per defecte   Descripció
+Paràmetre       Valor per defecte   Descripció
 ============    =================   ==================================================
-d_screw_h       3 mm                Diametre de la tija del cargol on ha de collar
+d_screw_h       3 mm                Diàmetre de la tija del cargol on ha de collar
 ============    =================   ==================================================
 
 .. figure:: design_images/prog_protect_01.png
@@ -188,9 +188,9 @@ d_screw_h       3 mm                Diametre de la tija del cargol on ha de coll
 2.3.3. Propulsors
 -----------------
 
-l'R2B2-nano esrà format per 4 propulsors que es componen de 3 parts: Carcassa del propulsor, carcassa del motor i hèlix.
+L'R2B2-nano està format per 4 propulsors que es componen de 3 parts: Carcassa del propulsor, carcassa del motor i hèlix.
 
-La carcassa dels propulsors ens serveix per collar els motors al xassís i per evitar que l'hèlix pugui col·lisionar amb qualsevol objecte quan el motor està en marxa. Els principals parametres que cal tenir en compte son les mides del motor. 
+La carcassa dels propulsors ens serveix per collar els motors al xassís i per evitar que l'hèlix pugui col·lisionar amb qualsevol objecte quan el motor està en marxa. Els principals paràmetres que cal tenir en compte son les mides del motor. 
 
 A continuació detallem quins paràmetres de la configuració afecten al propulsor:
 
@@ -213,17 +213,17 @@ A continuació detallem quins paràmetres de la configuració afecten al propuls
 
 
 ============    =========================  ==================================================
-Parametre       Valor per defecte          Descripció
+Paràmetre       Valor per defecte          Descripció
 ============    =========================  ==================================================
-d_screw_h       3 mm                       Diametre de la tija del cargol on ha de collar
+d_screw_h       3 mm                       Diàmetre de la tija del cargol on ha de collar
 w_walls         2.7 mm                     Amplada de les parets  
 w_support       8 mm                       Amplada dels suports del propulsors
 h_support       8 mm                       Profunditat dels suports del propulsors
 w_walls_m       1 mm                       Parets de la carcassa del motor
-d_motor_t       d_motor+(w_walls_m*2) mm   Diametre total del motor (motor + carcassa)
+d_motor_t       d_motor+(w_walls_m*2) mm   Diàmetre total del motor (motor + carcassa)
 h_motor_sup     8 mm                       Alçada del cos del motor
 o_motor         0 mm                       Offset del suport respecte la base del propulsor
-d_thruster      34 mm                      Diametre del propulsor
+d_thruster      34 mm                      Diàmetre del propulsor
 h_thruster      30 mm                      Alçada del propulsor
 ============    =========================  ==================================================
 
@@ -232,7 +232,7 @@ h_thruster      30 mm                      Alçada del propulsor
 
     Propulsor (**thruster.scad**).
 
-La carcassa del motor ens serveix per aillar els motors de l'aigua. Els principals parametres que hem de tenir en compte son les mides dels motors que volem fer servir i l'amplada de les paret de la carcassa, que amb un valor petit ja serà suficien ja que no ha d'aguntar càrrega mecanica, tan sols aillar de l'aigua. Per l'amplada de l'eix del motor sempre va bé deixar una mica més de la mida real, sino a l'hora del muntatge haurem de repassar els forats amb un trepant. I per a l'alçada de la carcassa deixar un milimetres extres respecte a l'alçada del motor per tal de poder-hi posar la cola tèrmica.
+La carcassa del motor ens serveix per aïllar els motors de l'aigua. Els principals paràmetres que hem de tenir en compte son les mides dels motors que volem fer servir i l'amplada de les paret de la carcassa, que amb un valor petit ja serà suficient ja que no ha d'aguantar càrrega mecànica, tan sols aillar de l'aigua. Per l'amplada de l'eix del motor sempre va bé deixar una mica més de la mida real, sino a l'hora del muntatge haurem de repassar els forats amb un trepant. I per a l'alçada de la carcassa deixar un milimetres extres respecte a l'alçada del motor per tal de poder-hi posar la cola tèrmica.
 
 .. code-block:: console
 
@@ -247,10 +247,10 @@ La carcassa del motor ens serveix per aillar els motors de l'aigua. Els principa
 
         
 =============   =================   ==================================================
-Parametre       Valor per defecte   Descripció
+Paràmetre       Valor per defecte   Descripció
 =============   =================   ==================================================
 w_walls_m       1 mm                Amplada de les parets de la carcassa
-d_motor         7.6 mm              Diametre del motor  
+d_motor         7.6 mm              Diàmetre del motor  
 h_motor_body    22.6 mm             Alçada de l'encapsulat del motor
 d_motor_shaft   1.5 mm              Amplada de l'eix del motor
 =============   =================   ==================================================
@@ -260,7 +260,7 @@ d_motor_shaft   1.5 mm              Amplada de l'eix del motor
 
     Encapsulat del motor (**motor_housing.scad**).
 
-En aquest objecte 3D s'ha tingut més en compte que s'ha de poder imprimir amb una impressora 3D que la seva eficiència. Per tant s'han fet unes hèlix no gaire primes i amb una forma molt recta per facilitar la impressió. No hi ha cap parametre destacable a part de escollir la quantitat d'aspes i la seva disposició ja que la majoria de parametres que l'afecten ja estan determinat per la mida del propulsor i del motor descrits anteriorment.
+En aquest objecte 3D s'ha tingut més en compte que s'ha de poder imprimir amb una impressora 3D que la seva eficiència. Per tant s'han fet unes hèlix no gaire primes i amb una forma molt recta per facilitar la impressió. No hi ha cap paràmetre destacable a part de escollir la quantitat d'aspes i la seva disposició ja que la majoria de paràmetres que l'afecten ja estan determinat per la mida del propulsor i del motor descrits anteriorment.
 
 .. code-block:: console
 
@@ -280,10 +280,10 @@ En aquest objecte 3D s'ha tingut més en compte que s'ha de poder imprimir amb u
     d_motor_grub=2      //motor grub screw diameter
 
 =============   =================   ==================================================
-Parametre       Valor per defecte   Descripció
+Paràmetre       Valor per defecte   Descripció
 =============   =================   ==================================================
 w_walls         2.7 mm              Amplada de les parets 
-d_thruster      34 mm               Diametre del propulsor
+d_thruster      34 mm               Diàmetre del propulsor
 h_propeller     10 mm               Alçada del propulsor
 o_propeller     1 mm                Espai entre l'hèlix i les parets del propulsor
 n_blade         3 mm                Nombre d'aspes a l'hèlix
@@ -291,7 +291,7 @@ s_blade         20 mm               Espai buit entre aspes en º
 w_blade         4 mm                Amplada de les parets de les aspes
 rounded         false               Forma de les aspes [round | trian | empty]
 d_motor_shaft   1.5 mm              Amplada de l'eix del motor
-d_motor_grub    2 mm                Diametre del cargol sense cap per collar l'hèlix
+d_motor_grub    2 mm                Diàmetre del cargol sense cap per collar l'hèlix
 =============   =================   ==================================================
 
 .. figure:: design_images/propeller_01.png
@@ -302,9 +302,9 @@ d_motor_grub    2 mm                Diametre del cargol sense cap per collar l'h
 2.3.4. Boia
 -----------
 
-Una de les majors complicacion que es presenten en un ROV són les comunicacions, degut a que l'aigua no és un medi amic de les altes freqüencies que utilitzen el Wifi o el Bluetooth. Per això es deu qué la majoria de ROVs duen un cable fins a la superfície, ja sigui per emetre les ones de communicació com per conectar directament a la consola de control.
+Una de les majors complicacion que es presenten en un ROV són les comunicacions, degut a que l'aigua no és un medi amic de les altes freqüències que utilitzen el Wifi o el Bluetooth. Per això es deu qué la majoria de ROVs duen un cable fins a la superfície, ja sigui per emetre les ones de comunicació com per connectar directament a la consola de control.
 
-Com a parametres a la boia nomes hi ha les mides del cargols que utilitzarem per unir-ne les dues parts.
+Com a paràmetres a la boia només hi ha les mides del cargols que utilitzarem per unir-ne les dues parts.
 
 .. code-block:: console
 
@@ -316,10 +316,10 @@ Com a parametres a la boia nomes hi ha les mides del cargols que utilitzarem per
     d_screw_head=6.5        //screw head diameter
 
 ============    =================   ==================================================
-Parametre       Valor per defecte   Descripció
+Paràmetre       Valor per defecte   Descripció
 ============    =================   ==================================================
-d_screw_h       3 mm                Diametre de la tija del cargol on ha de collar
-d_screw_head    6.5 mm              Diametre del cap del cargol
+d_screw_h       3 mm                Diàmetre de la tija del cargol on ha de collar
+d_screw_head    6.5 mm              Diàmetre del cap del cargol
 ============    =================   ==================================================
 
 .. figure:: design_images/buoy_01.png
@@ -330,13 +330,13 @@ d_screw_head    6.5 mm              Diametre del cap del cargol
 2.3.5. Carcassa
 ---------------
 
-La carcassa **NO ÉS IMPRIMIBLE** en 3D!!! Està feta a mà amb espuma FOAM o alguna altre espuma que es pugui moldejar fàcilment amb un cuter, un trepan petit amb una fresa, llimes... 
+La carcassa **NO ÉS IMPRIMIBLE** en 3D!!! Està feta a mà amb espuma FOAM o alguna altra espuma que es pugui moldejar fàcilment amb un cúter, un trepant petit amb una fresa, llimes... 
 
-La seva funció principal és aconseguir la flotabilitat zero de l'R2B2-nano, és a dir que un cop col·loquen la carcassa a l'R2B2-nano i el submergim sota l'aigua ni s'enfonsi ni floti cap a la superficie.
+La seva funció principal és aconseguir la flotabilitat zero de l'R2B2-nano, és a dir que un cop col·loquen la carcassa a l'R2B2-nano i el submergim sota l'aigua ni s'enfonsi ni floti cap a la superfície.
 
 .. note:: Sempre va bé deixar una mica de flotabilitat positiva per que l'R2B2-nano vagi cap a la superficie en el cas de que ens quedem sense bateria o es produeix algun error de communicacions.
 
-Per tan la carcassa de R2B2-nano és pot fer al gust i forma de cadascú tinguent en compte els principis d'Arquímedes. Si fem una forma de carcassa assimètrica, l'eix que es crea entre el punt de flotació i el punt de pes farà que l'R2B2-nano s'estabilitzi en una posició incòmode i de més dificil controlar.
+Per tant la carcassa de R2B2-nano es pot fer al gust i forma de cadascú tinguent en compte els principis d'Arquimedes. Si fem una forma de carcassa asimètrica, l'eix que es crea entre el punt de flotació i el punt de pes farà que l'R2B2-nano s'estabilitzi en una posició incòmode i de més difícil controlar.
 
 .. figure:: design_images/flot_bad.png
     :align: center
