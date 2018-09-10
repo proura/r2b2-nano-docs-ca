@@ -48,7 +48,7 @@ S'ha fet un allisat més fi amb paper de vidre.
 
 .. image:: 60_body_images/60_03_body_assembly.jpg
 
-S'han fet forat per que no s'hi acomuli aire a entrar dins l'aigua.
+S'han fet forats per que no s'hi acomuli aire a l'entrar dins l'aigua.
 
 .. image:: 60_body_images/60_04_body_assembly.jpg
 

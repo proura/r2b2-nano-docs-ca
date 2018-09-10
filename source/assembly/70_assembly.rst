@@ -35,7 +35,7 @@
 
 5.7.2 Muntatge
 **************
-Si estem en aquest punt vol dir que tenim totes les parts apunt. Primer agafarem els propulsors i els cargolarem a la base. Per això caldrà fer passar els cables d'alimentació del xassís d'alimentació pel forat que hi ha al xassís de control.
+Si estem en aquest punt vol dir que tenim totes les parts anteriors apunt. Primer agafarem els propulsors i els cargolarem a la base. Per això caldrà fer passar els cables d'alimentació del xassís d'alimentació pel forat que hi ha al xassís de control.
 
 Si ho hem fet tot correctament ens quedarà l'R2B2-nano de la següent manera.
 
@@ -49,7 +49,7 @@ Per cada parell de cables dels motors hi passarem una funda termoretràctil i ll
 
 .. image:: 70_assembly_images/70_03_assembly.jpg
 
-Per assegurar-nos de que sigui impermeable i no es curtcircuiti cobrirem les soldadures amb cola tèrmica i llavors hi posarem la funda termoretràctil a sobre i hi aplicarem calor pq s'hi ajusti, però sense excedir-nos ja que podem fondre la cola tèrmica i creuar els cables del motor.
+Per assegurar-nos de que sigui impermeable i no es curtcircuiti cobrirem les soldadures amb cola tèrmica, llavors hi posarem la funda termoretràctil a sobre i hi aplicarem calor pq s'hi ajusti, però sense excedir-nos ja que podem fondre la cola tèrmica i creuar els cables del motor.
 
 .. image:: 70_assembly_images/70_04_assembly.jpg
 
@@ -57,11 +57,11 @@ Farem el mateix procediment per unir el cable de massa que surt de la base d'ali
 
 .. image:: 70_assembly_images/70_05_assembly.jpg
 
-Per el cable d'alimentació restant hi muntarem un terminal DuPont mascle i un femella. Així podrem fer servir-lo a modo d'interruptor.
+Per el cable d'alimentació restant hi muntarem un terminal DuPont mascle i un femella. Així podrem fer servir-lo com a interruptor.
 
 .. image:: 70_assembly_images/70_06_assembly.jpg
 
-Ara els únics cables que ens queden a l'aire són els cables per el port de programació. Com que pràcticament no farem servir aquest port, només si tenim algun problema amb el WiFi o Firmware, l'encapsularem dins el protector de port.
+Ara els únics cables que ens queden a l'aire són els cables pel port de programació. Com que pràcticament no farem servir aquest port, només si tenim algun problema amb el WiFi o Firmware, l'encapsularem dins el protector del port.
 
 .. image:: 70_assembly_images/70_07_assembly.jpg
 
